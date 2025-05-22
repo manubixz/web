@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Pizza</title>
+</head>
+<body>
+  <h2>Formulário de Pedido de Pizza</h2>
+  <form action="/enviar-pedido" method="post">
+    
+    <!-- Tamanho da Pizza -->
+    <fieldset>
+      <legend>Tamanho da Pizza:</legend>
+      <label><input type="radio" name="tamanho" value="pequena" required> Pequena</label><br>
+      <label><input type="radio" name="tamanho" value="media"> Média</label><br>
+      <label><input type="radio" name="tamanho" value="grande"> Grande</label>
+    </fieldset>
+
+    <!-- Coberturas -->
+    <fieldset>
+      <legend>Coberturas:</legend>
+      <label><input type="checkbox" name="coberturas" value="calabresa"> Calabresa</label><br>
+      <label><input type="checkbox" name="coberturas" value="mussarela"> Mussarela</label><br>
+      <label><input type="checkbox" name="coberturas" value="bacon"> Bacon</label><br>
+      <label><input type="checkbox" name="coberturas" value="azeitona"> Azeitona</label><br>
+      <label><input type="checkbox" name="coberturas" value="cebola"> Cebola</label>
+    </fieldset>
+
+    <!-- Tipo de Massa -->
+    <fieldset>
+      <legend>Tipo de Massa:</legend>
+      <label><input type="radio" name="massa" value="fina" required> Fina</label><br>
+      <label><input type="radio" name="massa" value="grossa"> Grossa</label>
+    </fieldset>
+
+    <!-- Informações de Entrega -->
+    <fieldset>
+      <legend>Informações de Entrega:</legend>
+      <label>Endereço:<br>
+        <input type="text" name="endereco" required>
+      </label><br><br>
+      <label>Cidade:<br>
+        <input type="text" name="cidade" required>
+      </label><br><br>
+      <label>CEP:<br>
+        <input type="text" name="cep" pattern="\d{5}-?\d{3}" required placeholder="00000-000">
+      </label>
+    </fieldset>
+
+    <br>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
