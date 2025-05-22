@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário na Célula Central</title>
+</head>
+<body>
+
+  <table border="1" width="100%" height="600">
+    <tr>
+      <td></td>
+      <td align="center" valign="middle">
+        <form>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            Nome: <input type="text" name="nome"><br><br>
+            Senha: <input type="password" name="senha"><br><br>
+            E-mail: <input type="email" name="email"><br><br>
+
+            Sexo:
+            <input type="radio" name="sexo" value="masculino"> Masculino
+            <input type="radio" name="sexo" value="feminino"> Feminino<br><br>
+
+            Data de Nascimento:
+            <input type="text" placeholder="dd/mm/aaaa"><br>
+          </fieldset>
+
+          <br>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            Logradouro: <input type="text" name="logradouro"><br><br>
+            Número: <input type="text" name="numero"><br><br>
+
+            Estado:
+            <select name="estado">
+              <option value="ac">Acre</option>
+              <option value="sp">São Paulo</option>
+              <option value="rj">Rio de Janeiro</option>
+              <!-- outros estados aqui -->
+            </select><br><br>
+
+            Complemento:<br>
+            <textarea name="complemento" rows="4" cols="40"></textarea>
+          </fieldset>
+
+          <br>
+
+          <fieldset>
+            <legend>Tópicos de Interesse</legend>
+            <input type="checkbox" name="interesse" value="musica"> Música<br>
+            <input type="checkbox" name="interesse" value="filmes"> Filmes<br>
+            <input type="checkbox" name="interesse" value="esportes"> Esportes<br>
+            <input type="checkbox" name="interesse" value="estudos"> Estudos<br>
+          </fieldset>
+
+          <br>
+
+          <input type="submit" value="Enviar (input)">
+          <button type="submit">Enviar (button)</button>
+        </form>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+

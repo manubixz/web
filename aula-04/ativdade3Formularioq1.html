@@ -1,0 +1,140 @@
+<form>
+    <label>Nome:</label><br>
+    <input type="text" name="nome"><br><br>
+  
+    <label>E-mail:</label><br>
+    <input type="email" name="email"><br><br>
+  
+    <label>Senha:</label><br>
+    <input type="password" name="senha"><br><br>
+  
+    <label>Gênero:</label>
+    <select name="genero">
+      <option value="">Selecione</option>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select><br><br>
+  
+    <label>Data de Nascimento:</label>
+    <input type="date" name="data_nascimento"><br><br>
+  
+    <input type="checkbox" name="termos"> Aceitar Termos e Condições<br><br>
+
+
+    <label>País:</label>
+<select name="pais">
+  <option value="">Selecione</option>
+  <option value="br">Brasil</option>
+  <option value="us">Estados Unidos</option>
+  <option value="pt">Portugal</option>
+</select><br><br>
+
+<button type="submit">Enviar</button>
+  </form>
+
+
+<label>Escolha suas cores favoritas:</label><br>
+    <input type="checkbox" name="cores" value="vermelho"> Vermelho<br>
+    <input type="checkbox" name="cores" value="azul"> Azul<br>
+    <input type="checkbox" name="cores" value="verde"> Verde<br><br>
+  
+    <label>Linguagem de programação favorita:</label><br>
+    <input type="radio" name="linguagem" value="python"> Python<br>
+    <input type="radio" name="linguagem" value="java"> Java<br>
+    <input type="radio" name="linguagem" value="js"> JavaScript<br><br>
+  
+    <label>Você prefere:</label><br>
+    <input type="radio" name="trabalho" value="equipe"> Trabalhar em Equipe<br>
+    <input type="radio" name="trabalho" value="sozinho"> Trabalhar Sozinho<br><br>
+  
+  
+    <button type="submit">Enviar</button>
+  </form><br><br>
+
+
+  <form>
+    <label>Título da Avaliação:</label><br>
+    <input type="text" name="titulo"><br><br>
+  
+    <label>Sua Avaliação:</label><br>
+    <textarea name="avaliacao"></textarea><br><br>
+  
+    <label>Classificação:</label><br>
+    <input type="radio" name="estrela" value="1"> ⭐<br>
+    <input type="radio" name="estrela" value="2"> ⭐⭐<br>
+    <input type="radio" name="estrela" value="3"> ⭐⭐⭐<br>
+    <input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐<br>
+    <input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐<br><br>
+  
+    <label>Recomendaria este produto?</label><br><br>
+    <input type="radio" name="recomenda" value="sim"> Sim<br>
+    <input type="radio" name="recomenda" value="nao"> Não<br><br>
+  
+    <button type="submit">Enviar</button>
+  </form>
+
+  <form onsubmit="return validarFormulario()">
+    <label>Nome e Sobrenome:</label><br>
+    <input type="text" id="nome" required><br><br>
+  
+    <label>E-mail:</label><br>
+    <input type="email" id="email" required><br><br>
+  
+    <label>Senha:</label><br>
+    <input type="password" id="senha" required minlength="8"><br><br>
+  
+    <label>Gênero:</label><br>
+    <select id="genero" required>
+      <option value="">Selecione</option>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select><br><br>
+  
+    <label>Data de Nascimento:</label><br>
+    <input type="date" id="data" required><br><br>
+  
+    <input type="checkbox" id="termos" required> Aceitar Termos e Condições<br><br>
+  
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <script>
+  function validarFormulario() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+    const genero = document.getElementById("genero").value;
+    const data = document.getElementById("data").value;
+    const termos = document.getElementById("termos").checked;
+  
+    if (!nome || !email || !senha || !genero || !data || !termos) {
+      alert("Por favor, preencha todos os campos corretamente.");
+      return false;
+    }
+  
+    return true;
+  }
+  </script>
+  
+
+
+  <form>
+    <label>Faixa Etária:</label><br><br>
+    <select name="faixa">
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-50">36-50</option>
+      <option value="50+">50+</option>
+    </select><br><br>
+  
+    <label>Escolha um Arquivo:</label><br><br>
+    <input type="file" name="arquivo"><br>
+  
+   
+  
+  
+
+
+  
